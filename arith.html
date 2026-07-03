@@ -1,2 +1,33 @@
- 
-
+     return;
+                }
+                else
+                {
+                  sum=num1+num2;
+                  diff=num1-num2;
+                  prod=num1*num2;
+                  if(num2===0)
+                  {
+                     div="Division By Zero Is Not Allowed.";
+                  }
+                  else
+                  {
+                       div=num1/num2;
+                  }
+                    document.getElementById("result").innerHTML="Sum:"+sum+ "<br>Difference:"+diff+"<br>Product:"+prod+"<br>Division:"+div;
+                }
+            }
+            function alertme()
+            {
+                var resultText=document.getElementById("result").innerText;
+                if(resultText)
+                {
+                    alert(resultText);
+                }
+                else
+                {
+                    alert("PLEASE PERFORM THE CALCULATIONS FIRST.")
+                }
+            }
+        </script>
+    </body>
+</html> 
