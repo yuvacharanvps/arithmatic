@@ -1,2 +1,25 @@
- 
-
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ARTITHEMATIC OPERATIONS</title>
+    </head>
+    <body align=" center ">
+        <h1>EXPERIMENT 22: ARTITHEMATIC OPERATIONS </h1>
+        Enter a Number :
+        <input type="number" id="num1" placeholder="Enter First Number" required><br><br>
+        Enter a Number :
+        <input type="number" id="num2" placeholder="Enter Second Number" required><br><br>
+        <button onclick="performOperations()"> Calculate </button>
+        <button onclick="alertme()"> Alert! Result </button>
+        <button type="reset" onclick="location.reload()">Reset</button>
+        <button onclick="location.replace('arthnlogin.html')"> LOGOUT </button>
+        <p id="result"></p>
+        <script>
+            function performOperations()
+            {
+                let sum, diff, prod, div;
+                var num1 = parseInt(document.getElementById("num1").value);
+                var num2 = parseInt(document.getElementById("num2").value);
+                if(isNaN(num1) || isNaN(num2))
+                {
+                    alert("Please Enter Both Numbers.");
